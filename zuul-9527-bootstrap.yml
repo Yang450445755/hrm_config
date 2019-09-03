@@ -5,11 +5,11 @@ spring:
     name: zuul-gateway
 zuul:
   routes:
-    management.serviceId: hrm_management # 服务名
+    management.serviceId: hrm_management
     management.path: /management/**
-    course.serviceId: hrm_course # 服务名
+    course.serviceId: hrm_course
     course.path: /course/**
-    fastdfs.serviceId: hrm_fastdfs # 服务名
+    fastdfs.serviceId: hrm_fastdfs
     fastdfs.path: /fastdfs/**
   ignored-services: "*" #所有服务都不允许以服务名来访问
   prefix: "/services" #加一个统一前缀
